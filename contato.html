@@ -1,0 +1,60 @@
+<footer id="contato" class="contato background-contato padding-50">
+    <!-- INICIO DA FOOTER CONTATO -->
+    <div class="container text-center">
+        <h1 class="titulo-contatos">Contatos</h1>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <!-- Um GRID é dividido por 12 grandes ou 12 colunas, a fim de fechar o 100% da area do monitor,para criar um site. Inicialmente, no rodapé o GRID será divido em 2 elementos: o Primeiro com 2 colunas e, o Segundo, com 10 colunas.Os proximos 2 DIVs das classes serão feitos com COL-MD-2 E COL-MD-10. -->
+                <div class="col-md-2">
+                    <!--A classe do bootstrap text-center, deixa o logotipo centralizado, dentro da coluna que se localiza (COL-MD-2) ou COLUNA MÉDIA DE 2. -->
+                    <center>
+                        <img class="logotipo" alt="Logo_Tipo" src="imgs/logo.png">
+                    </center>
+                </div>
+                <div class="col-md-10">
+                    <!-- significa coluna média de 10(numero de colunas) (SOMA DE 12 GRID) -->
+                    <div class="row row-cols">
+                        <!-- A classe ROW ROW-COLS serve para locar as 3 colunas: col-md-4 col-popular-post, col-md-4 col-links, col-md-4 col-get-in-touch. Assim, fica um GRID DE 12 colunas(grades), distribuido em 100% com 3x  COL-MD-4 -->
+                        <!-- <div class="col-md-4 col-popular-post"> -->
+                        <div class="col-md-4 col-endereco">
+                            <h4>ENDEREÇO</h4>
+                            <center>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1733.333729802459!2d-51.103048342012116!3d-29.671422664989503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951943dbcc84039d%3A0x1bbd2980e222d241!2sR.%20Pedro%20Am%C3%A9rico%2C%20211%20-%20S%C3%A3o%20Jorge%2C%20Novo%20Hamburgo%20-%20RS%2C%2093534-500!5e0!3m2!1spt-BR!2sbr!4v1584040230120!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </center>
+                        </div><!-- Essa div fecha col-md-4 col-popular-post. -->
+
+                        <div class="col-md-4 col-telefone">
+                            <h4>TELEFONE</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fa fa-phone"></i>(51) XXX-XXXX</a></li>
+                            </ul>
+                        </div><!-- Essa div fecha col-md-4 col-links -->
+
+                        <div class="col-md-4 col-form">
+                            <h4 id="formulario">CONTATO</h4>
+                            <p>Entre em contato e tenha todas as suas dúvidas respondidas.<br>Responderemos o mais
+                                rápido possível</p>
+                            <form class="top-emp-form" method="POST" action="lib/php/?.php">
+                                <form class="top-emp-form" method="POST" action="lib/php/enviar.php">
+                                    <input type="text" name="nome" placeholder="Insira o Seu Nome" required
+                                        autocomplete="off">
+                                    <input type="number" name="numero" placeholder="Insira o Seu Telefone ou Celular" required
+                                        autocomplete="off">
+                                    <textarea name="mensagem" placeholder="Deixe sua mensagem" required
+                                        autocomplete="off"></textarea>
+                                    <input type="submit" name="enviar" value="Enviar" onclick="enviar();">
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- FINAL DA FOOTER CONTATO -->
+
+<div class="copyright text-center">
+    <!-- INICIO COPYRIGHT -->
+    <p class="copyright">COPYRIGHT © 2019. Todos os direitos reservados Sul Metalúrgica.</p>
+</div><!-- FINAL COPYRIGHT-->
