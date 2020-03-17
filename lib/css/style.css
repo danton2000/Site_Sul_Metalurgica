@@ -102,13 +102,16 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
     overflow-y: auto;
 }
 
-
 .nav li a{
 	color: #FFF !important;
 }
 
 .nav li a:hover{
 	color: rgb(202, 202, 202) !important;
+}
+
+i{
+	margin: 0 6px;
 }
 
 .logo{
@@ -120,9 +123,9 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 
 
 .fone {
-	font-size: 18px;
+	font-size: 16.5px;
 	color: #fff;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 15px;
 	font-weight: bold;
 	text-shadow: 0.1em 0.1em 0.2em black
@@ -130,6 +133,7 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 
 .fa-whatsapp{
 	color: chartreuse !important;
+	font-size: 22px !important;
 }
 
 .menu li a{
@@ -149,13 +153,19 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 	background: radial-gradient(circle, rgba(50,103,153,1) 0%, rgba(50,103,153,1) 90%, rgba(92,153,210,1) 98%);
 }
 
+.background-sobre{
+	background: rgb(50,103,153);
+	background: radial-gradient(circle, rgba(50,103,153,1) 0%, rgba(50,103,153,1) 90%, rgba(92,153,210,1) 98%);
+}
+
 .background-produtos{
 	background-color: #33373a;
 }
 
 
 .background-contato{
-	background-color: #33373a;
+	background: rgb(50,103,153);
+	background: radial-gradient(circle, rgba(50,103,153,1) 0%, rgba(50,103,153,1) 90%, rgba(92,153,210,1) 98%);
 }
 
 /*TITULOS E DESCRIÇÕES*/
@@ -168,7 +178,7 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 	margin-top: -25px;
 	margin-bottom: -50px; 
 	text-align: center;
-	text-shadow: 0.1em 0.1em 0.2em black
+	text-shadow: 0.1em 0.1em 0.2em black;
 	  
 }
 
@@ -198,8 +208,44 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 	margin-top: 65px;
 }
 
-#conteudo{
-	
+/*SOBRE*/
+.sobre{
+	margin-top: 65px;
+}
+
+.local{
+	margin-top: 80px;
+}
+
+.img_sobre{
+	position: relative;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.titulo_sobre{
+	color: #FFA500;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	margin-top: 80px;
+}
+
+.descricao_sobre{
+	color: #fff;
+	font-family: 'Tahoma';
+	font-size: 18px;
+}
+
+.descricao_sobre_produto{
+	color: #fff;
+	font-family: 'Tahoma';
+	font-size: 18px;
+}
+
+.sub_titulo_sobre{
+	color: #FFA500;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	font-size: 22px;
+	font-family: 'Arial';
 }
 
 /*produtos*/
@@ -225,6 +271,7 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 	font-family: 'Arial';
 	font-weight: bold;
 	color: #FFA500;
+	text-shadow: 0.1em 0.1em 0.2em black;
 }
 
 .descricao-servicos{
@@ -237,30 +284,23 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 
 /*CONTATO*/
 .contato{
-	margin-top: -5px;
+	margin-top: 60px;
 }
 
 .titulo-contatos{
-	color: #fff;
+	color: #FFA500;
+	text-shadow: 0.1em 0.1em 0.2em black;
   	font-weight: bold;
   	margin-top: -10px;
-	text-align: left;
-	font-family: 'PT_Sans';
+	text-align: center;
+	font-family: 'Arial';
 	font-size: 40px;
 	
-}
-
-footer{
-	margin-top: 110px; /* serve para deixar uma altura entre os 2 botoões,quais botões shop e register, rodapé.*/
 }
 
 footer .row{/*USA-SE  o .row para configurar a largura do rodapé*/
 	width: 100%; /*serve para não criar uma rolagem na tela, um schroll horizontal.isso serve para o rodapé não ultrapassar os 100% de largura do monitor.*/
 	margin-left: 0px; /*A margin left de 0px ajusta o rodapé no seu posicionamento.*/
-}
-
-footer .row p{/*Tirar a margem inferior do rodapé, ou seja, uma linha branca que fica na parte de baixo da tela ou na parte inferior do rodapé*/
-	
 }
 
 footer .fundo-preto{
@@ -276,15 +316,14 @@ footer iframe{
 
 footer .logotipo{
 	margin-top: 50px;
-	margin-left: -50px;
+	margin-left: -10px;
+	width: 200px;
 	height: 150px;
 }
 
 footer .col-telefone ul{
 	text-align: center;
 	margin-left: -3px;
-	
-
 }
 
 footer .col-endereco,
@@ -294,21 +333,36 @@ footer .col-form{
 }
 
 footer .row-cols h4 {
+	color: #FFA500;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	font-size: 20px;
+	font-family: 'Arial';
 	text-align: center;
-	font-size: 16px;
-	font-family: 'PT_Sans';
-	color: #fff;
-	padding-bottom: 17px;/*O PADDING-BOTTOM é uma margin interna, que fica entre a palavra POPULAR POST, LINKS e GET IN TOUCH. e a linha inserida antes do primeiro link, abaixo do POPULAR POST.*/
-	border-bottom: #336799 2px solid;/*A propriedade BORDER-BOTTOM #242D37 1px solid insere uma linha abaixo de POPULAR POST,LINKS E GET IN TOUCH*/
 }
 
-footer .col-telefone a{
+footer .col-telefone li{
+	font-size: 18px;
 	color: #fff;
-	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.2em black
 }
 
-footer .col-telefone .fa{
+footer .col-telefone li .telefone_footer{
+	margin-bottom: 20px;
+}
+
+footer .col-telefone i{
 	margin: 0 6px; /* 0(top e bottom) 6px(left e right)*/
+}
+
+#email{
+	margin-top: 30px;
+}
+
+#email_p{
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
 }
 
 footer .col-form p{
@@ -318,12 +372,12 @@ footer .col-form p{
 }
 
 /*FORMS*/
-form.top-emp-form{
+form.sul-met-form{
 	max-width: 300px;
 	margin: 0px auto;
 }
 
-form.top-emp-form input{
+form.sul-met-form input{
 	width: 100%;
 	margin: 5px;
 	height: 50px;
@@ -334,7 +388,7 @@ form.top-emp-form input{
 	text-align: center;
 }
 
-form.top-emp-form textarea{
+form.sul-met-form textarea{
 	padding: 5px;
 	border: none;
 	color: #333;
@@ -345,20 +399,20 @@ form.top-emp-form textarea{
 	margin: 5px;
 }
 
-form.top-emp-form input[type="submit"]{
-	background: #336799;
+form.sul-met-form input[type="submit"]{
+	background: rgb(255,165,0);
+	background: linear-gradient(90deg,rgba(255,165,0,1) 20%, rgba(50,103,153,1) 80%, rgba(255,165,0,1) 100%);
 	color: #fff;
 	font-size: 18px;
 	width: 110px;
 	border-radius: 2px;
 }
 
-form.top-emp-form input[type="submit"]:hover{
-	background: #fff;
-	color: #336799;
+form.sul-met-form input[type="submit"]:hover{
+	background: rgb(255,165,0) !important;
+	background: linear-gradient(90deg,rgba(50,103,153,1) 15%, rgba(50,103,153,1) 30%, rgba(255,165,0,1) 100%) !important;
+	color: #fff;
 }
-
-
 
 /*COPY*/
 div.copyright{
