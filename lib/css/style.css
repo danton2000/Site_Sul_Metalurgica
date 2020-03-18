@@ -162,8 +162,8 @@ i{
 	background-color: #33373a;
 }
 
-
 .background-contato{
+	height: 650px;
 	background: rgb(50,103,153);
 	background: radial-gradient(circle, rgba(50,103,153,1) 0%, rgba(50,103,153,1) 90%, rgba(92,153,210,1) 98%);
 }
@@ -287,17 +287,6 @@ i{
 	margin-top: 60px;
 }
 
-.titulo-contatos{
-	color: #FFA500;
-	text-shadow: 0.1em 0.1em 0.2em black;
-  	font-weight: bold;
-  	margin-top: -10px;
-	text-align: center;
-	font-family: 'Arial';
-	font-size: 40px;
-	
-}
-
 footer .row{/*USA-SE  o .row para configurar a largura do rodapé*/
 	width: 100%; /*serve para não criar uma rolagem na tela, um schroll horizontal.isso serve para o rodapé não ultrapassar os 100% de largura do monitor.*/
 	margin-left: 0px; /*A margin left de 0px ajusta o rodapé no seu posicionamento.*/
@@ -329,10 +318,19 @@ footer .col-telefone ul{
 footer .col-endereco,
 footer .col-telefone,
 footer .col-form{
-	margin-top: 40px;/*A MARGIN-TOP é uma margin que fornece uma distância entre a margin de cima do rodapé e as palavras: POPULAR POST, LINKS e GET IN TOUCH*/
+	margin-top: 60px;/*A MARGIN-TOP é uma margin que fornece uma distância entre a margin de cima do rodapé e as palavras: POPULAR POST, LINKS e GET IN TOUCH*/
 }
 
 footer .row-cols h4 {
+	color: #FFA500;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Arial';
+	text-align: center;
+}
+
+footer .row-cols h3{
 	color: #FFA500;
 	text-shadow: 0.1em 0.1em 0.2em black;
 	font-size: 20px;
@@ -355,14 +353,21 @@ footer .col-telefone i{
 	margin: 0 6px; /* 0(top e bottom) 6px(left e right)*/
 }
 
+#endereco_p{
+	color: #fff;
+	font-size: 16px;
+}
+
 #email{
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #email_p{
 	text-align: center;
 	color: #fff;
 	font-size: 20px;
+	margin-top: -5px;
 }
 
 footer .col-form p{
