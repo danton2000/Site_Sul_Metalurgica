@@ -416,7 +416,7 @@ form.sul-met-form input[type="submit"]{
 	color: #fff;
 	font-size: 18px;
 	width: 110px;
-	border-radius: 2px;
+	border:1px solid #fff;
 }
 
 form.sul-met-form input[type="submit"]:hover{
