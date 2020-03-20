@@ -139,8 +139,11 @@ i{
 	position: absolute;
 }
 
+.fone{
+	
+}
 
-.fone {
+.fone p{
 	font-size: 16.5px;
 	color: #fff;
 	margin-left: 10px;
@@ -159,7 +162,6 @@ i{
 	margin-bottom: 10px;
 	font-size: 20px;
 	font-family: 'Montserrat';
-	
 }
 
 /*BACKGROUNDS*/
