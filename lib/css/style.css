@@ -80,24 +80,23 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 	margin-left: -140px;
 }
 
-.header{
-	float: left;
-	width: 100%;
-}
+/* .header{
+	
+} */
 
 .navbar-inverse .navbar-toggle {/* botão do menu */
-	margin-top: -60px;
 	margin-bottom: 15px;
 	background: rgb(255,165,0) !important;
 	background: linear-gradient(90deg,rgba(50,103,153,1) 15%, rgba(50,103,153,1) 54%, rgba(255,165,0,1) 100%) !important;
 	color: #fff !important;
+	border-color: #fff !important;
 
 }
 
 .navbar-inverse { /*cor do menu */
     background: rgb(255,165,0) !important;
 	background: linear-gradient(90deg, rgba(255,165,0,1) 0%, rgba(50,103,153,1) 8%, rgba(50,103,153,1) 94%, rgba(255,165,0,1) 100%) !important;
-	border-color: #fff !important;
+	border-color: rgb(255,165,0) !important;
 }
 
 .navbar-fixed-bottom, .navbar-fixed-top {
@@ -107,7 +106,7 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #fff !important;
+    border-color: rgb(255,165,0) !important;
 }
 .container-fluid .navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
     margin-right: -55px;
@@ -140,15 +139,22 @@ i{
 }
 
 .fone{
-	margin-top: 10px;
-	margin-left: 120px;
+	text-align: center;
+	height: 50px;
+	background: rgb(255,165,0);
+	background: linear-gradient(90deg, rgba(255,165,0,1) 2%, rgba(50,103,153,1) 8%, rgba(50,103,153,1) 94%, rgba(255,165,0,1) 98%);
 }
 
 .fone p{
+	display: inline;
 	font-size: 16.5px;
 	color: #fff;
 	font-weight: bold;
 	text-shadow: 0.1em 0.1em 0.2em black
+}
+
+p .telefone{
+	margin-top: 10px;
 }
 
 .fa-whatsapp{
@@ -194,8 +200,7 @@ i{
 	color: #fff;
 	border-bottom: 1px solid #fff;	
 	font-size: 50px;
-	margin-top: -25px;
-	margin-bottom: -50px; 
+	margin-bottom: 30px; 
 	text-align: center;
 }
 
@@ -222,7 +227,26 @@ i{
 
 /*SERVIÇOS*/
 .servicos{
-	margin-top: 65px;
+	margin-top: -20px;
+}
+
+.bottom-serv{
+	margin-bottom: 15px;
+}
+
+.titulo-detalhe-servicos{
+	font-size: 25px;
+	font-family: 'Times New Roman';
+	color: #f6890c;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	font-weight: bold;
+}
+
+.descricao-servicos{
+	color: rgb(221, 221, 221);
+	text-align: left;
+	font-family: 'Tahoma';
+	font-size: 18px;
 }
 
 .img_servicos{
@@ -240,11 +264,15 @@ i{
 
 /*SOBRE*/
 .sobre{
-	margin-top: 65px;
+	margin-top: -20px;
 }
 
 .local{
-	margin-top: 80px;
+	margin-top: 20px;
+}
+
+.historia{
+	margin-top: -60px;
 }
 
 .img_sobre{
@@ -295,26 +323,9 @@ i{
 	border-radius: 10px;
 }
 
-
-.titulo-detalhe-servicos{
-	font-size: 25px;
-	font-family: 'Times New Roman';
-	color: #f6890c;
-	text-shadow: 0.1em 0.1em 0.2em black;
-	font-weight: bold;
-}
-
-.descricao-servicos{
-	color: rgb(221, 221, 221);
-	text-align: left;
-	font-family: 'Tahoma';
-	font-size: 18px;
-}
-
-
 /*CONTATO*/
 .contato{
-	margin-top: 60px;
+	margin-top: -20px;
 }
 
 footer .row{/*USA-SE  o .row para configurar a largura do rodapé*/
@@ -358,6 +369,7 @@ footer .row-cols h4 {
 	font-weight: bold;
 	font-family: 'Arial';
 	text-align: center;
+	margin-top: -50px;
 }
 
 footer .row-cols h3{
